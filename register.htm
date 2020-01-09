@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration form></title>
+<link rel="stylesheet" href="style.css">
+<script src="register.js"></script>
+</head>
+<body>
+<form action="action_page.php" name="myform" onclick="validateForm()">
+<div class="main">
+<h1 style="text-align:center;">Registration Form</h1>
+<fieldset style="margin-left:200px;width:60%">
+	<div class="main1">
+	<table>
+		<tr>
+			<td colspan="2" style="width:20px;">First Name:</td>
+			<td colspan="2"><input type="text" name="fname" required pattern="[A-Za-z]+"></td>
+		</tr>
+		<tr>
+			<td colspan="2">Father's Name</td>
+			<td colspan="2"><input type="text" name="fatherName" required pattern="[A-Za-z]+"></td>
+		</tr>
+		<tr>
+			<td>Gender:<td>
+			<td><input type="radio" name="gender" value="male" required>Male</td>
+			<td><input type="radio" name="gender" value="female" required>Female</td>
+			<td><input type="radio" name="gender" value="other" required>Other</td>
+		</tr>
+		<tr>
+			<td colspan="2">Email:</td>
+			<td colspan="2"><input type="email" name="email" required pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"></td>
+		</tr>
+		<tr>
+			<td colspan="2">Mobile Number</td>
+			<td colspan="2"><input type="text" name="mobile" placeholder="Don't start with +91 or 0" required pattern="[0-9]{10}"></td>
+		</tr>
+		<tr>
+			<td colspan="2">Address</td>
+			<td colspan="2"><input type="textarea" name="address" rows="3" col="25" required></td>
+		</tr>
+	</table>
+		
+	</div>
+	<div class="main2">
+	<table>
+		<tr>
+			<td colspan="2">Last Name</td>
+			<td colspan="2"><input type="text" name="lname" required pattern="[A-Za-z]+"></td>
+		</tr>
+		<tr>
+			<td colspan="2">Mother's Name</td>
+			<td colspan="2"><input type="text" name="motherName" required pattern="[A-Za-z]+"></td>
+		</tr>
+		<tr>
+			<td colspan="2">Marrital status</td>
+			<td colspan="2"><select name="marry">
+				<option value="none" required>select</option>
+				<option value="married" required>Married</option>
+				<option value="unmarried" required>UnMarried</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td colspan="2">Nationality</td>
+			<td colspan="2"><input type="text" name="nation" required pattern="[A-Za-z]+"></td>
+		</tr>
+		<tr>
+			<td colspan="2">Aadhar Number</td>
+			<td colspan="2"><input type="text" name="adhar" required pattern="[0-9]{16}"></td>
+		</tr>
+		<tr>
+			<td colspan="4" rowspan="3"><button type="button">Register yourself</button></td>
+		</tr>
+		</table>
+	</div>
+	</fieldset>
+</div>
+</form>
+</body>
+
+</html>
